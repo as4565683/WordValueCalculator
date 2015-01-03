@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wortwertrechner</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="wordvalue_hint">Gib das Wort ein, dass Du umgewandelt haben willst:</string>
+    <string name="wordvalue_title">Wortwert = </string>
+    <string name="quickhelp">Wortwerte errechnen sich aus der Summe aller Buchstabwerte, wobei folgendes gilt:\n\na=1, b=2, ... z=26\n1=1, 2=2, ... 9=9\nä=27, ö=28, ü=29, ß=30\n\nAlle anderen Zeichen zählen nicht. Groß/Kleinschreibung spielt keine Rolle.</string>
+</resources>

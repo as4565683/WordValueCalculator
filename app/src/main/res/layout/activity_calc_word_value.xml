@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcWordValue">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="A=1"
+            android:id="@+id/logo"
+            android:background="@drawable/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/wordvalue_title"
+            android:id="@+id/title"
+            android:layout_alignBottom="@id/logo"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/wordvalue"
+            android:textStyle="bold"
+            android:text="0"
+            android:layout_marginLeft="6dp"
+            android:layout_alignTop="@id/title"
+            android:layout_toRightOf="@+id/title" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wordvalue_hint"
+            android:id="@+id/hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/logo" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/word"
+            android:inputType="text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/clrbtn"
+            android:layout_toLeftOf="@+id/clrbtn"
+            android:layout_below="@+id/hint" />
+
+        <Button
+            android:id="@+id/clrbtn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_alignBottom="@id/word"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quickhelp"
+            android:id="@+id/quickhelp2"
+            android:layout_below="@+id/word"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="gravity" />
+    </RelativeLayout>
+</ScrollView>

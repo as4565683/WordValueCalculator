@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Word Value</string>
+    <string name="action_settings">Settings</string>
+    <string name="wordvalue_hint">Enter the word that you need the value of:</string>
+    <string name="wordvalue_title">Word Value = </string>
+    <string name="quickhelp">A word value is the sum of all letters:\n\na=1, b=2, ... z=26\n1=1, 2=2, ... 9=9\nä=27, ö=28, ü=29, ß=30\n\nAll other characters are ignored. Case insensitive.</string>
+</resources>
